@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React</title>
+</head>
+<body>
+    <!-- <h1> Wello World!</h1> -->
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    
+    <!-- <script>console.log(React)</script> -->
+    <script type="text/babel">
+        // Criando Elemento 
+
+        // var h1 = React.createElement('div', null, 'Hello h1 React!')
+
+
+        // Criando elemento dentro de elemento
+        // var h1 = React.createElement('h1', null, [
+        //     React.createElement('span', null, 
+        //         React.createElement(
+        //             'i', null, 'Itálico'
+        //         )),
+        //     React.createElement('Span', null, 'Texto do Span 2')
+        //     ])
+
+
+        
+        //  Criando elemento com o DOM (React.DOM)
+        // var h1 = 
+        //     React.DOM.h1(null, [
+        //         React.DOM.span(null, 
+        //             React.DOM.i(null, 'Itálico')),
+            
+        //         React.DOM.span(null, 'Texto do Span 2')
+        //     ])
+
+        // Criando Componentes
+        var Title = React.createClass({
+            render: function(){
+                return(
+                    <h1>
+                        <span>Wello World</span>
+                    </h1>
+                )
+            }
+        })
+
+
+        // Rederizando JSX com o  BABEL
+        ReactDOM.render(
+                <div>
+                <h1>Show React</h1>
+                <Title/>
+                </div>,
+                document.getElementById('app')
+            );
+
+
+        // Rederizando na tela
+        // ReactDOM.render(h1, document.getElementById('app')) 
+        // console.log(h1)
+    </script>
+</body>
+</html>
