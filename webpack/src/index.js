@@ -2,6 +2,14 @@
 
 'user strict'
 
-var sum = require('./App')
+// var sum = require('./App')
+// console.log( sum(3, 3))
 
-console.log( sum(3, 3))
+var React = require('react')
+var ReactDOM = require('react-dom')
+var Title = require('./App')
+
+ReactDOM.render(
+    React.createElement(Title),
+    document.querySelector('[data-js="App"]')
+)
