@@ -1,18 +1,12 @@
+
 'use strict'
 
-// function sum   (val1, val2 ){
-//     return val1 + val2
-// } 
-// module.exports = sum
-// Criando aplicação em React
-var React = require('react') 
+import React from 'react'
 
-// var Title = React.createClass({
-//     render: function(){
-//         return React.createElement('h1', null, 'Título da Aplicação')
-//     }
-// })
+var Title = React.createClass({
+  render: function () {
+    return <h1>Título</h1>
+  }
+})
 
-var Title =  React.createElement('h1', null, 'Título da Aplicação')
-
-module.exports = Title
+export default Title
