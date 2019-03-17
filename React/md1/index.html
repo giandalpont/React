@@ -15,7 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
 
 <script>
-    let h1 = React.createElement('h1', null, 'Hello World!')
+    let h1 = React.createElement('h1', null, 
+        [
+            React.createElement('span', null, React.createElement('i', null, 'Itálico')),
+            React.createElement('sapn', null, 'Outro Span')
+        ])
     // console.log(h1)
     ReactDOM.render(h1, document.getElementById('app'))
 </script>
