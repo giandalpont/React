@@ -13,14 +13,19 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
 
-<script>
-    let h1 = React.createElement('h1', null, 
-        [
-            React.createElement('span', null, React.createElement('i', null, 'Itálico')),
-            React.createElement('sapn', null, 'Outro Span')
-        ])
+<script type="text/babel">
+    // let h1 = React.DOM.h1( null, 
+    //     [
+    //         React.DOM.span( null, React.DOM.i( null, 'Itálico')),
+    //         React.DOM.span( null, ' Outro Span')
+    //     ]
+    // )
     // console.log(h1)
-    ReactDOM.render(h1, document.getElementById('app'))
+    ReactDOM.render(
+        <h1>Wello world!</h1>, 
+        document.getElementById('app')
+    )
 </script>
 </html>
