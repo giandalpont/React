@@ -13,7 +13,7 @@
 
 - [x] 007 MRW01 - Apresentando minhas configurações de ambiente e o Webpack.
 - [x] 008 MRW01.0.1 - Aula do futuro sobre versões das dependências.
-- [ ] 009 MRW02 - Configuração basica do Webpack.
+- [x] 009 MRW02 - Configuração básica do Webpack.
 - [ ] 010 MRW03 - Usando o server do Webpack.
 - [ ] 011 MRW04 - Modularizando a aplicação.
 - [ ] 012 MRW05 - Criando uma aplicação em React.
