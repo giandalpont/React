@@ -7,7 +7,7 @@
     <title>React Module 2 pt 1</title>
 </head>
 <body>
-    <h1>Olá</h1>
+    
     <div id="app"></div>
     
 </body>
@@ -16,15 +16,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
 
 <script type="text/babel">
-    // let h1 = React.DOM.h1( null, 
-    //     [
-    //         React.DOM.span( null, React.DOM.i( null, 'Itálico')),
-    //         React.DOM.span( null, ' Outro Span')
-    //     ]
-    // )
-    // console.log(h1)
+    let Title = React.createClass({
+        render: ()=>{
+            return (
+                <div>
+                    <h1>
+                        Wello 
+                        <span> world</span>
+                    </h1>
+                </div>
+            )
+        }
+    })
+    
     ReactDOM.render(
-        <h1>Wello world!</h1>, 
+        <Title />, 
         document.getElementById('app')
     )
 </script>
