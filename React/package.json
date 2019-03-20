@@ -18,7 +18,8 @@
   "author": "Gian Carlos Dal Pont",
   "license": "MIT",
   "dependencies": {
-    "g": "^2.0.1"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "webpack": "^4.29.6",
